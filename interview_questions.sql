@@ -40,7 +40,7 @@ What would the query for such a report look like?
 */
 
 /*
-5. I also have the following table:
+5. I also have the following two tables:
 
 dim_persons
 ---------------------------------------------------------------
@@ -53,19 +53,37 @@ dim_persons
 |...
 ---------------------------------------------------------------
 
-I'd like a report of the most popular majors at the university, and their average teacher-to-student ratios.
-Please limit it to the top 5 most popular majors.
+dim_gpas
+------------------------
+| ID | person_id | GPA |
+| 7  |    103    | 3.4 |
+| 8  |    104    | 3.9 |
+| 9  |    106    | 4.0 |
+|...
+------------------------
 
-It should look like this:
+I'd like a report of the top 3 performing students for each major at my university.
 
-| Major (department name) | Number of Students | Teacher to Student Ratio |
+It can either be one line per department or one line per top student.
+
+It should look something like this:
+
+Department | student name(s) | GPA
 
 What would the query for such a report look like?
 */
 
 
 /*
-6. I have two more tables:
+6. Can you limit the above query to the top 5 most popular majors by student enrollment?
+
+Add a column for total student enrollment.
+*/
+
+
+
+/*
+7. I have two more tables:
 
 dim_classrooms
 -------------------------------------------------------
@@ -89,6 +107,7 @@ fact_course_offerings
 ---------------------------------------------------------------------------
 
 I need a report that shows me conflicts between classroom bookings in the same time slot.
-What should that look like?
+It should show the names of the classes, the time slot, the classroom, and the names of the professors involved.
+Ideally, I'd have only one row per conflict.
 What query would you write to create this report?
 */
