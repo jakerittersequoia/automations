@@ -42,9 +42,12 @@ Skills, with default values:
 
 """
 
+import yml
+import os
 
 class Person:
-    def __init__(stats):
+    def __init__(name):
+        stats = ## Get stats from the yml file for a person as indicated by the name
         self.name = stats['trait']['name']
         self.age = stats['trait']['age']
         self.height = stats['trait']['height']
