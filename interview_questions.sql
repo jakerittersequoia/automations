@@ -1,7 +1,7 @@
 /*
 1. What is the difference between a LEFT JOIN and an INNER JOIN?
 
-2. What is an UPSERT?
+2. What is DDL? How is it different from DML?
 
 3. What is the difference between WHERE and HAVING?
 */
